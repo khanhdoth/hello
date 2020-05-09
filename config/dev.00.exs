@@ -5,11 +5,9 @@ config :hello, Hello.Repo,
   username: "postgres",
   password: "postgres",
   database: "hello_dev",
-  socket_dir: "/tmp/cloudsql/dev-sulof-com:us-central1:hellodb",
-  # hostname: "172.17.0.1",
-  # show_sensitive_data_on_connection_error: true,
-  # pool_size: 10
-  pool_size: 15
+  hostname: "172.17.0.1",
+  show_sensitive_data_on_connection_error: true,
+  pool_size: 10
 
 # For development, we disable any cache and enable
 # debugging and code reloading.
